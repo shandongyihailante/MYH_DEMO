@@ -1,3 +1,51 @@
-git init  
+git 版本号 ： git --version
+创建文件  : touch index.html
+git 初始化： git init  
+git配置： git config -l
+  
+        git config user.name 'mayonghong'
+        git config --global user.name 'mayonghong'
+        git config user.email '18369963015@163.com'
+        git config --global user.email 'ma_yong_hong_123@163.com'
+git添加: git add index.html
+git状态: git status 
+git删除添加的文件:git rm --cached index.html
+git添加所有文件(html 后缀) : git add *.html
+git添加所有文件: git add .
+git提交： git commit -m 'changed 1.txt'
+git创建忽略文件:  touch .gitignore
+git 创建分支(login):  git branch login
+git 切换分支: git checkout login
+git 合并分支:   git merge login
+git 远程:    git remote add origin https://github.com/shandongyihailante/homeworker.git
+git push:git push -u origin master
+git push -u origin master
 
-git config -l
+
+进入下个目录: cd \2
+
+创建文件夹: mkdir src
+
+删除文件夹: rm -r src
+回退上一个目录: cd ..
+
+
+
+
+
+
+
+
+
+
+
+       
+        git remote add git_demo https://github.com/shandongyihailante/MYH_DEMO.git
+        git remote
+        git remote -v
+        git push -u git_demo master
+
+
+
+
+
