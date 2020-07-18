@@ -1,25 +1,45 @@
 git 版本号 ： git --version
 创建文件  : touch index.html
 git 初始化： git init  
+创建文件：git touch hello.txt (hello.txt 文件名)
 git配置： git config -l
   
         git config user.name 'mayonghong'
-        git config --global user.name 'mayonghong'
+        git config --global user.name 'mayonghong'（基本不用，给整个计算机一次性设置）
         git config user.email '18369963015@163.com'
         git config --global user.email 'ma_yong_hong_123@163.com'
+        git config --local （给当前项目一次性设置）
+        git config --local user.name 'myh'
+        git config --local user.email '18369963015@163.com'
+ 进入 .git文件夹下：    cd .git/
+ 查看config文件内容： cat config 
+
+
 git添加: git add index.html
 git状态: git status 
-git删除添加的文件:git rm --cached index.html
+git删除添加的文件:git rm --cached index.html  （暂存区）
+  git 删除某个文件：  git rm a.txt （删除之后会被放到暂存区  彻底删除：git commit -m ' xinxi'）
+  
+
+日志查看 ：git log   git log 2  (最近两次提交)
 git添加所有文件(html 后缀) : git add *.html
 git添加所有文件: git add .
 git提交： git commit -m 'changed 1.txt'
+修正提交信息：git commit --amend -m '修正'
+
 git创建忽略文件:  touch .gitignore
 git 创建分支(login):  git branch login
 git 切换分支: git checkout login
+撤销提交文件：git checckout -- hello.txt  (注意加空格)
 git 合并分支:   git merge login
 git 远程:    git remote add origin https://github.com/shandongyihailante/homeworker.git
 git push:git push -u origin master
 git push -u origin master
+
+git 重命名： git mv hello.txt hello2.txt
+            git reset HEAD hello.txt
+            git checkout -- hello.txt
+
 
 
 进入下个目录: cd \2
