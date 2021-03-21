@@ -53,7 +53,8 @@ git 重命名： git mv hello.txt hello2.txt
 
 
 
-
+git status 先看一下add 中的文件 
+git reset HEAD 如果后面什么都不跟的话 就是上一次add 里面的全部撤销了 
 
 
 
