@@ -30,11 +30,14 @@ git提交： git commit -m 'changed 1.txt'
 git创建忽略文件:  touch .gitignore
 git 创建分支(login):  git branch login
 git 切换分支: git checkout login
-撤销提交文件：git checckout -- hello.txt  (注意加空格)
+撤销提交文件：git checkout -- hello.txt  (注意加空格)
 git 合并分支:   git merge login
 git 远程:    git remote add origin https://github.com/shandongyihailante/homeworker.git
 git push:git push -u origin master
 git push -u origin master
+
+使用强制push的方法： 一般不适用
+git push -u origin master -f
 
 git 重命名： git mv hello.txt hello2.txt
             git reset HEAD hello.txt
